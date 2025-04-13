@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install Node dependencies
         run: npm install
@@ -36,6 +37,7 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
+          cache-version: v1
 
       - name: Install Jekyll dependencies
         run: bundle install
