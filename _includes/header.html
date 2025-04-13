@@ -8,10 +8,14 @@
                 <button onclick="toggleMenu()" class="text-gray-900 text-2xl">☰</button>
             </div>
             <div id="mobile-menu" class="hidden sm:flex sm:items-center sm:space-x-4">
-                <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2">Home</a>
-                <a href="/services" class="text-gray-900 hover:text-blue-600 px-3 py-2">Services</a>
-                <a href="/portfolio" class="text-gray-900 hover:text-blue-600 px-3 py-2">Portfolio</a>
-                <a href="/about" class="text-gray-900 hover:text-blue-600 px-3 py-2">About</a>
+                <a href="{{ '/' | relative_url }}"
+                    class="{% if page.url == '/' %}text-blue-600 font-semibold{% else %}text-gray-900 hover:text-blue-600{% endif %} px-3 py-2">Home</a>
+                <a href="{{ '/services' | relative_url }}"
+                    class="{% if page.url == '/services/' %}text-blue-600 font-semibold{% else %}text-gray-900 hover:text-blue-600{% endif %} px-3 py-2">Services</a>
+                <a href="{{ '/portfolio' | relative_url }}"
+                    class="{% if page.url == '/portfolio/' %}text-blue-600 font-semibold{% else %}text-gray-900 hover:text-blue-600{% endif %} px-3 py-2">Portfolio</a>
+                <a href="{{ '/about' | relative_url }}"
+                    class="{% if page.url == '/about/' %}text-blue-600 font-semibold{% else %}text-gray-900 hover:text-blue-600{% endif %} px-3 py-2">About</a>
                 <a href="#contact" class="btn-primary">Contact</a>
             </div>
         </div>

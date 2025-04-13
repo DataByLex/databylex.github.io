@@ -4,32 +4,123 @@
 
 body {
     @apply font-sans bg-gray-100 text-gray-900;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     @apply font-display;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero {
-    @apply bg-gradient-to-r from-blue-500 to-green-500 text-gray-50 text-center py-24 px-4;
+    @apply bg-gradient-to-r from-blue-600 to-green-500 text-gray-50 text-center py-24 px-4 relative;
+    background: linear-gradient(to right, #3B82F6, #10B981);
+    color: #F3F4F6;
+    padding: 6rem 2rem;
+}
+
+.hero::before {
+    content: '';
+    @apply absolute inset-0 bg-opacity-10 bg-black z-0;
 }
 
 .btn-primary {
     @apply bg-blue-500 text-gray-50 py-3 px-6 rounded-lg no-underline transition-colors hover:bg-blue-700;
+    background-color: #3B82F6;
+    color: #F3F4F6;
+    border-radius: 0.5rem;
 }
 
 .btn-accent {
     @apply bg-green-500 text-gray-50 py-3 px-6 rounded-lg no-underline transition-colors hover:bg-green-700;
+    background-color: #10B981;
+    color: #F3F4F6;
+    border-radius: 0.5rem;
 }
 
 .icon {
-    @apply text-5xl text-green-500;
+    @apply text-5xl text-green-500 transition-transform duration-300;
+    font-size: 2.5rem;
+    color: #10B981;
 }
 
 .service-card {
-    @apply bg-white rounded-lg p-6 shadow-md transition-transform hover:-translate-y-1;
+    @apply bg-white rounded-lg p-6 shadow-md transition-transform duration-300;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    @apply transform -translate-y-1;
+}
+
+.service-card:hover .icon {
+    @apply transform scale-110;
 }
 
 footer {
     @apply bg-gray-800 text-gray-50 text-center py-6;
+    background-color: #1F2937;
+    color: #F3F4F6;
+    padding: 2rem;
+}
+
+input,
+textarea {
+    @apply border-gray-300 rounded-md p-2 w-full;
+}
+
+label {
+    @apply text-sm font-medium text-gray-50;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
