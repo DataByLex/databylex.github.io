@@ -1,0 +1,24 @@
+title: "DataByLex"
+description: "Personalized data services — migration, automation, cleanup."
+baseurl: ""
+url: "https://databylex.github.io"
+destination: _site
+show_drafts: false
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - .github
+  - README.md
