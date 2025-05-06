@@ -1,0 +1,58 @@
+	{
+		"profile": "data-package", 
+		"name": "06779371-308f-42d7-895e-5a39833375f0", 
+		"contributors": [
+			{
+				"role": "author", 
+				"email": "rodger@mvs.gov.ua", 
+				"title": "rodger_236"
+			}, 
+			{
+				"role": "maintainer", 
+				"email": "i.bugaenko@hsc.gov.ua", 
+				"title": "Бугаєнко Ігор Іванович"
+			}
+		], 
+		"created": "2018-08-22T14:52:50.808591", 
+		"title": "Відомості про транспортні засоби та їх власників", 
+		"keywords": [
+			"автомобіль", 
+			"автомобілі", 
+			"власник", 
+			"власники", 
+			"засоби", 
+			"колісні", 
+			"реєстр", 
+			"тз", 
+			"транспортні"
+		], 
+		"version": "1.0", 
+		"licenses": [
+			{
+				"path": "http://www.opendefinition.org/licenses/cc-by", 
+				"name": "cc-by", 
+				"title": "Creative Commons Attribution"
+			}
+		], 
+		"homepage": "https://databylex.github.io/portfolio", 
+		"id": "0ffd8b75-0628-48cc-952a-9302f9799ec0", 
+		"resources": [
+			{
+				"mimetype": "application/zip", 
+				"profile": "data-resource", 
+				"name": "reestrTZ2024", 
+				"format": ".zip", 
+				"encoding": "utf-8", 
+				"path": "https://github.com/DataByLex/databylex.github.io/blob/main/assets/reestrtz2024.zip"
+			}, 
+			{
+				"mimetype": "application/zip", 
+				"profile": "data-resource", 
+				"name": "reestrTZ2025", 
+				"format": ".zip", 
+				"encoding": "utf-8", 
+				"path": "https://github.com/DataByLex/databylex.github.io/blob/main/assets/reestrtz2025.zip"
+			}
+		], 
+		"description": "Набір даних містить інформацію щодо транспортних засобів та їх власників. Інформація в наборі розділена на окремі ресурси, кожен з яких відповідає вказаному періоду."
+	}
