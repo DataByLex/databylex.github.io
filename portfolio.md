@@ -18,7 +18,7 @@ title: Portfolio - DataByLex
             </div>
             <div class="service-card">
                 <h2 class="text-xl font-semibold mb-2">Automated Reporting</h2>
-                <p>Built a Python-based pipeline for daily sales reports, cutting processing time by 70%.</p>
+                <p>Built a Python-based pipeline for daily sales reports, cutting processing time by 70%. <a href="https://github.com/DataByLex/databylex.github.io/blob/main/assets/datapackage.json">pack</a>a</p>
             </div>
         </div>
     </div>
